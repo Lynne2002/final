@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Reporting Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/ad0d310a4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+ <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <button id="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <header>
+      <nav>
+        <a href="#home" id="logo">Report Crimes</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about-us">About Us</a>
+          </li>
+          
+         
+          <li>
+            <a href="#contact-us">Contact Us</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!------ Section: Hero ------>
+    <section class="hero" id="home">
+      <img src="assets/images/header-shape.svg" id="header-shape" />
+      <div class="hero-content">
+        <h1>Let's Make Kenya peaceful!</h1>
+        <p>
+          This website makes it easier to report crimes, in a fast and efficient manner without having to go to the police station in person!
+          
+        </p>
+        <div class="btn-container">
+         <a href="report.html"> <button class="primary-btn btn">Report a crime</button></a>
+         
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="assets/images/image1.png.crdownload" />
+      </div>
+    </section>
+  
+
+    <section class="about-us" id="about-us">
+      <h2>About us</h2>
+      <p class="section-desc">
+        We are fast, efficient and reliable. We ensure we serve the common mwananchi, wherever they are, to the best of our abilities.
+      </p>
+      <div class="row">
+        <div class="column">
+          <i class="fas fa-star"></i>
+          <h3>Our mission</h3>
+          <p>
+            To Keep You, Your Family, and Our
+            Community Safe.
+            
+          </p>
+        </div>
+        <div class="column">
+          <i class="fas fa-thumbs-up"></i>
+          <h3>Our Vision</h3>
+          <p>
+            Respected & Trusted by All Segments of Kenya's Diverse Communities.
+          </p>
+        </div>
+        <div class="column">
+            <i class="fa-solid fa-circle-check"></i>
+          <h3>Our Core Values</h3>
+          <p>
+Responsiveness</br>
+Ethical Conduct<br>
+Selfless Service<br>
+Progressiveness<br>
+Equality<br>
+Community<br>
+Trust
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="testimonial" id="testimonial">
+      <h2>What Our Clients Say</h2>
+      <p class="section-desc">
+        We provide fast and affordable security, and always make sure that our clients are satisfied with the services we offer.
+      </p>
+      <div class="row">
+        <div class="column">
+          <div class="testimonial-image">
+            <img src="assets/images/person1.jpg" />
+          </div>
+          <p>
+           I witnessed a crime recently, and didn't know of a police station nearby. This website made things super easy for me:)
+          </p>
+          <h3>Diana Muthoni</h3>
+        </div>
+        <div class="column">
+          <div class="testimonial-image">
+            <img src="assets/images/person2.jpeg" />
+          </div>
+          <p>
+            I am so happy about the fast services I received once I reported a crime on this website!
+          </p>
+          <h3>Chris Kinuthia</h3>
+        </div>
+      </div>
+    </section>
+   
+    <section class="contact-us" id="contact-us">
+      <h2>Contact Us</h2>
+      <div class="container">
+       
+        <form method="post" >
+          <div class="form-row">
+            <div class="input-data">
+              <input name="firstname" type="text" required>
+              <div class="underline"></div>
+              <label for="">First Name</label>
+            </div>
+            <div class="input-data">
+              <input name="lastname" type="text" required>
+              <div class="underline"></div>
+              <label for="">Last Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input name="email" type="text" required>
+              <div class="underline"></div>
+              <label for="">Email Address</label>
+            </div>
+            <div class="input-data">
+              <input name="message" type="text" required>
+              <div class="underline"></div>
+              <label for="">Message title</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data textarea">
+              <textarea name="description" rows="8" cols="80" required></textarea>
+              <div class="underline"></div>
+              <label for="">Write your message</label>
+            </div>
+          </div>
+          <div class="form-row submit-btn">
+            <div class="input-data">
+              <div class="inner"></div>
+              <input type="submit" value="submit">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  
+
+    <footer>
+      <div class="row footer-about">
+        <h3>Report Crimes</h3>
+        <p>
+          Please follow us on our facebook, instagram and twitter links below for the latest updates
+        </p>
+        <div class="social-links">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row footer-contact">
+        <div class="column">
+          <h4>Phone No</h4>
+          <p>+254 700 011 111</p>
+        </div>
+        <div class="column">
+          <h4>Email</h4>
+          <p>creport@gmail.com</p>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        Copyright &copy; 2021 Crime Reports. All rights reserved.
+      </p>
+    </footer>
+ 
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

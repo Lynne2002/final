@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us form</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/report.css">
+     
+      
+    
+
+        <style>
+         
+    #map {
+      height: 400px;
+     
+      width: 50%;
+      
+    }
+    </style>
+		      </head>
+
+
+	<body background="assets/images/write.jpg">
+		
+<h1 style="text-align: center; color:white; text-transform: capitalize;">Crime Reporting Form</h1>
+
+
+			<div class="wrapper">
+        <div id="confirm" class="fw-bold fs-2 text-center text-white"></div>
+<form action="report.html" name="myForm" method="post"  onsubmit = "return(validate());"">
+				<div class="form">
+					<div class="input-fields">
+						<input type="text" name="firstname" class="input" id="firstname" placeholder="First Name">
+                        <input type="text" name="lastname" class="input" id="lastname" placeholder="Last Name">
+						<input type="text" name="email" class="input" placeholder="Email address">
+						<input type="text" name="phone" class="input" placeholder="Phone Number">
+<p>Crime type:</p>
+
+<div>
+  <input type="checkbox" id="robbery" name="robbery"
+         checked>
+  <label for="scales">Robbery</label>
+</div>
+
+<div>
+  <input type="checkbox" id="kidnapping" name="kidnapping">
+  <label for="kidnapping">Kidnapping</label>
+</div>
+<div>
+    <input type="checkbox" id="car-hijack" name="car-hijack">
+    <label for="car-hijack">Car Hijack</label>
+  </div>
+<div>
+    <input type="checkbox" id="murder" name="murder">
+    <label for="murder">Murder</label>
+  </div>
+  <div>
+    <input type="checkbox" id="other" name="other">
+    <label for="murder">Other</label>
+  </div>
+						
+					</div>
+         
+     
+       
+      
+    
+
+   
+           
+              
+					<div class="btn">
+                       <input type="submit" class="btn">
+                    </div>
+                   
+                   
+               
+				</div>
+			</div>
+
+    </form>
+      
+		
+	</body>
+	</html>
+  
+    <script>
+      function validate() {
+      
+      if( document.myForm.firstname.value == "" ) {
+         alert( "Please provide your first name!" );
+         document.myForm.firstname.focus() ;
+         return false;
+      }
+      if( document.myForm.lastname.value == "" ) {
+         alert( "Please provide your last name!" );
+         document.myForm.lastname.focus() ;
+         return false;
+      }
+      if( document.myForm.email.value == "" ) {
+         alert( "Please provide your Email!" );
+         document.myForm.EMail.focus() ;
+         return false;
+      }
+     
+      if( document.myForm.phone.value == "" ) {
+         alert( "Please provide your country!" );
+         return false;
+      }
+    
+      return( true );
+    }
+    function validateEmail() {
+       var emailID = document.myForm.EMail.value;
+       atpos = emailID.indexOf("@");
+       dotpos = emailID.lastIndexOf(".");
+       
+       if (atpos < 1 || ( dotpos - atpos < 2 )) {
+          alert("Please enter correct email ID")
+          document.myForm.EMail.focus() ;
+          return false;
+       }
+       return( true );
+    }
+   
+
+
+  function getFormInput(){
+      var firstname=getElementById('firstname').value
+      var lastname=getElementById('lastname').value
+      document.getElementById('confirm').innerHTML=alert("Thank you "+firstname+". We have received your crime report from" );
+  } 
+  </script>
